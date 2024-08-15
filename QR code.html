@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="qr.css" rel="stylesheet">
+    <title>Page title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    
+   <div class="container">
+       <div class="input">
+            <form id="frm" action="#">
+                <lable for="url">ENTER URL</lable></br>
+                <input type="url" id="url" required placeholder="url">
+                <lable for="size">QR CODE SIZE</lable></br>
+                <select id="size">
+                    
+                    <option value="100">100×100</option>
+                    
+                    <option value="200">200×200</option>
+                    
+                    <option value="300">300×300</option>
+                    
+                    <option value="400">400×400</option>
+                    
+                </select>
+                <div>
+                <lable for="colorDark"> COLOR DARK</lable></br>
+                <input type="color" id="colorDark">
+                </div>
+                <div>
+                <lable for="colorLight"> COLOR LIGHT</lable></br>
+                <input value="#ffffff" type="color" id="colorLight">
+                </div>
+                <button type="submit">Generate QRcode</button>
+                <div class="saveButton">
+             <a href="" class="btnSave">SAVE BUTTON</a>
+         </div>  
+            </form>
+        </div>
+             <div class="output">
+                 <div id="qrcode">
+                     <img src="Qr.png">
+                 </div>                           
+                 <div id="loading">
+                       <div id="spinner">                     
+                       </div> 
+                 </div>   
+         </div>  
+         
+     </div>                          
+</body>
+<script src="qr.js"></script>
+</html>
+                  
